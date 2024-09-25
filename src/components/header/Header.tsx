@@ -27,14 +27,16 @@ const Header: React.FC<HeaderProps> = ({ links }) => {
 
         <div className="flex w-5/12 items-center gap-2.5 rounded-full bg-g-100 px-6 py-2.5">
           <input type="text" placeholder="검색" className="w-full" />
-          <img src={search} alt="" />
+          <button>
+            <img src={search} alt="" />
+          </button>
         </div>
 
         <div className="flex gap-x-12 md:gap-x-4">
-          <Link to="/" className="text-g-600">
+          <Link to="/login" className="text-g-600">
             로그인
           </Link>
-          <Link to="/" className="text-g-600">
+          <Link to="/signup" className="text-g-600">
             회원가입
           </Link>
         </div>
