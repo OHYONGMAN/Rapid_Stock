@@ -14,7 +14,7 @@ const App: React.FC = () => {
 
   return (
     <>
-      <Header title="MyLogo" links={links} />
+      <Header links={links} />
     </>
   );
 };
