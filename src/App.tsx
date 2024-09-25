@@ -7,8 +7,9 @@ const App: React.FC = () => {
   // const [count, setCount] = useState(0);
 
   const links = [
-    { name: '메뉴1', url: '/menu1' },
-    { name: '메뉴2', url: '/menu2' },
+    { name: '뉴스룸', url: '/news' },
+    { name: '커뮤니티', url: '/community' },
+    { name: '모의투자', url: '/stock' },
   ];
 
   return (

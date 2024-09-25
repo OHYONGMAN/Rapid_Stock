@@ -13,5 +13,12 @@
   textarea,
   select {
     font-family: 'Pretendard Variable', sans-serif;
+    color: theme('colors.bk');
+  }
+}
+
+@layer base {
+  input {
+    background-color: transparent;
   }
 }
