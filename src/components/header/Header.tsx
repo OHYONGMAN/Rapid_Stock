@@ -1,4 +1,6 @@
 import React from 'react';
+import logo from '/src/assets/img/logo.svg';
+import search from '/src/assets/img/ico-search.svg';
 
 interface HeaderProps {
   links: { name: string; url: string }[];
@@ -10,7 +12,7 @@ const Header: React.FC<HeaderProps> = ({ links }) => {
       <div className="container mx-auto flex items-center justify-between py-5">
         <h1>
           <a href="/">
-            <img src="/src/assets/img/logo.svg" alt="rapid stock" />
+            <img src={logo} alt="rapid stock" />
           </a>
         </h1>
 
@@ -24,7 +26,7 @@ const Header: React.FC<HeaderProps> = ({ links }) => {
 
         <div className="flex w-5/12 items-center gap-2.5 rounded-full bg-g-100 px-6 py-2.5">
           <input type="text" placeholder="검색" className="w-full" />
-          <img src="/src/assets/img/ico-search.svg" alt="" />
+          <img src={search} alt="" />
         </div>
 
         <div className="flex gap-x-12 md:gap-x-4">
