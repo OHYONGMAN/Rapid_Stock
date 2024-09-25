@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from '/src/assets/img/logo.svg';
 import search from '/src/assets/img/ico-search.svg';
+import { Link } from 'react-router-dom';
 
 interface HeaderProps {
   links: { name: string; url: string }[];
@@ -11,16 +12,16 @@ const Header: React.FC<HeaderProps> = ({ links }) => {
     <header className="border-b border-g-400">
       <div className="container mx-auto flex items-center justify-between py-5">
         <h1>
-          <a href="/">
+          <Link to="/">
             <img src={logo} alt="rapid stock" />
-          </a>
+          </Link>
         </h1>
 
         <nav className="flex gap-x-12 font-semibold md:gap-x-4">
           {links.map((link, index) => (
-            <a key={index} href={link.url}>
+            <Link key={index} to={link.url}>
               {link.name}
-            </a>
+            </Link>
           ))}
         </nav>
 
@@ -30,8 +31,12 @@ const Header: React.FC<HeaderProps> = ({ links }) => {
         </div>
 
         <div className="flex gap-x-12 md:gap-x-4">
-          <button className="text-g-600">로그인</button>
-          <button className="text-g-600">회원가입</button>
+          <Link to="/" className="text-g-600">
+            로그인
+          </Link>
+          <Link to="/" className="text-g-600">
+            회원가입
+          </Link>
         </div>
       </div>
     </header>
