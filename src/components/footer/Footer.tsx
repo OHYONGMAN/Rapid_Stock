@@ -11,19 +11,19 @@ const Footer: React.FC = () => {
   ];
 
   return (
-    <footer className="w-full fixed bottom-0 left-0 bg-g-100 text-g-600">
+    <footer className="fixed bottom-0 left-0 w-full bg-g-100 text-g-600">
       <div className="container mx-auto flex flex-col justify-between py-12">
         <div className="flex items-start gap-20">
           <img src={logo} alt="rapid stock" className="w-60" />
           <div>
-            <ul className="list-none grid grid-cols-3 gap-x-12">
+            <ul className="grid list-none grid-cols-3 gap-x-12">
               {infoLinks.map((infoLink, index) => (
                 <li key={index}>
                   <a
                     href={infoLink.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:underline text-g-600"
+                    className="text-g-600 hover:underline"
                   >
                     {infoLink.name} | {infoLink.url}
                   </a>
