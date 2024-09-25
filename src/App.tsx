@@ -1,7 +1,8 @@
 // import { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
-
 import Header from './components/header/Header';
+import NewsPage from './components/main/newsPage/NewsPage';
 
 const App: React.FC = () => {
   // const [count, setCount] = useState(0);
@@ -13,9 +14,12 @@ const App: React.FC = () => {
   ];
 
   return (
-    <>
+    <Router>
       <Header links={links} />
-    </>
+      <Routes>
+        <Route path="/news" element={<NewsPage />} />
+      </Routes>
+    </Router>
   );
 };
 
