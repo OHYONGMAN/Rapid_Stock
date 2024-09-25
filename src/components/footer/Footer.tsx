@@ -3,10 +3,10 @@ import logo from '/src/assets/img/logo-gray.svg';
 
 const Footer: React.FC = () => {
   const infoLinks = [
-    { name: '오용민', url: 'https://github.com/ynn-i' },
-    { name: '장나라', url: 'https://github.com/ynn-i' },
-    { name: '장유주', url: 'https://github.com/ynn-i' },
-    { name: '지명진', url: 'https://github.com/ynn-i' },
+    { name: '오용민', url: 'https://github.com/OHYONGMAN' },
+    { name: '장나라', url: 'https://github.com/nanaazzipgithub' },
+    { name: '장유주', url: 'https://github.com/UZU82' },
+    { name: '지명진', url: 'https://github.com/damoayo' },
     { name: '진승현', url: 'https://github.com/ynn-i' },
   ];
 
