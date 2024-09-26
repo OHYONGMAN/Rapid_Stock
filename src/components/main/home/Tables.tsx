@@ -1,7 +1,3 @@
-import React from 'react'
-
 export default function Tables() {
-  return (
-    <div>Tables</div>
-  )
+  return <div>Tables</div>;
 }
